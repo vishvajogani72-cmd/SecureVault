@@ -11,7 +11,7 @@ class VaultService:
 
     def __init__(self):
      self.key_manager = KeyManager()
-     self.db = DatabaseManager("securevault_api_test.db")
+     self.db = DatabaseManager("securevault_local.db")
      self.db.create_tables()
      self.vault_key = None
 
@@ -305,3 +305,4 @@ class VaultService:
         return True
 
      return False
+
